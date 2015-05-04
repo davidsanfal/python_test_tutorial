@@ -27,6 +27,7 @@ class SquareTest(unittest.TestCase):
     def test_multi_area(self):
         for side1, side2 in test_sides:
             my_square = Square(side1, side2)
+            my_square.calculate_area()
             self.assertEqual(my_square.area,
                              self.area(side1, side2))
 
